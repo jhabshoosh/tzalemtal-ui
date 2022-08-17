@@ -1,11 +1,15 @@
 import React from 'react';
 import styles from './Score.module.css';
 
+interface Props {
+    guess: string;
+    score: number;
+}
 
-export const Score = () => {
+export const Score = ({guess, score}: Props) => {
     return (
-        <div className={styles.guess}>
-            <input></input>
+        <div className={styles.score}>
+            <span>{guess}: {score.toFixed(4)}%</span>
         </div>
     )
 }
