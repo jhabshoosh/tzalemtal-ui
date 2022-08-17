@@ -9,7 +9,7 @@ interface Props {
 export const Score = ({guess, score}: Props) => {
     return (
         <div className={styles.score}>
-            <span>{guess}: {score.toFixed(4)}%</span>
+            <span>{guess}: {+(score.toFixed(3))}%</span>
         </div>
     )
 }

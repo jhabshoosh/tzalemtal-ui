@@ -5,6 +5,7 @@ import { Score } from '../../components/score/Score';
 
 const API_URL = 'https://tzalemtal-api.herokuapp.com';
 
+
 export const Game = () => {
 
     const [results, setResults] = useState([] as any);  
@@ -48,7 +49,7 @@ export const Game = () => {
         <div className={styles.game}>
             Tzalemtal!
             <div>
-                <img src={'/fishing.jpg'}></img>
+                <img src='/answer.jpg'></img>
             </div>
             {error && `Error: ${error}`}
             {!!!gameOver && (
