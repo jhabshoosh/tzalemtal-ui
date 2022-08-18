@@ -4,7 +4,7 @@ import styles from './Game.module.css';
 import { Score } from '../../components/score/Score';
 
 const API_URL = 'https://tzalemtal-api.herokuapp.com';
-
+const PICTURE_URL = 'https://github.com/jhabshoosh/tzalemtal-assets/blob/master/hint.jpg?raw=true';
 
 export const Game = () => {
 
@@ -49,7 +49,7 @@ export const Game = () => {
         <div className={styles.game}>
             Tzalemtal!
             <div>
-                <img src='/answer.jpg'></img>
+                <img src={PICTURE_URL} />
             </div>
             {error && `Error: ${error}`}
             {!!!gameOver && (
